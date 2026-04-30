@@ -3,9 +3,9 @@ import logo from "@/assets/starsign-logo.png";
 
 const links = [
   { label: "Concept", href: "#concept" },
-  { label: "How it works", href: "#how" },
+  { label: "Comment ça marche", href: "#how" },
   { label: "Fans", href: "#fans" },
-  { label: "Artists", href: "#artists" },
+  { label: "Artistes", href: "#artists" },
   { label: "Pros", href: "#pros" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -38,7 +38,7 @@ export function Nav() {
             href="#beta"
             className="inline-flex items-center rounded-full bg-gradient-neon px-5 py-2 text-sm font-semibold text-primary-foreground shadow-glow-sm transition-transform hover:scale-105"
           >
-            Join the beta
+            Rejoindre la bêta
           </a>
         </div>
         <button
@@ -71,7 +71,7 @@ export function Nav() {
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center rounded-full bg-gradient-neon px-5 py-2 text-sm font-semibold text-primary-foreground"
               >
-                Join the beta
+                Rejoindre la bêta
               </a>
             </li>
           </ul>
