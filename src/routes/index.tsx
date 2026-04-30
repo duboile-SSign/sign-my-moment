@@ -282,7 +282,9 @@ function Artists() {
     { t: "Un outil d'engagement live", d: "Déclenchez un moment partagé sans casser le show." },
     { t: "Un lien direct post-show", d: "Une connexion opt-in avec les fans, au-delà des réseaux." },
     { t: "Signature, pas gadget", d: "Votre signature, votre style, votre moment — possédés par l'artiste." },
-    { t: "Insights communauté", d: "Voyez où est votre public, quand il réagit, ce qu'il garde." },
+    { t: "Analyse de communauté", d: "Cartographiez votre public : villes, âges, fidélité, super-fans actifs." },
+    { t: "Performance & engagement", d: "Suivez en temps réel les pulses déclenchées, signatures captées et taux de rétention par show." },
+    { t: "Mesure d'impact & ROI", d: "Quantifiez l'effet de chaque moment : partages, réactivations, conversion en billets et merch." },
   ];
   return (
     <section id="artists" className="relative border-y border-border/40 py-24 sm:py-32">
@@ -295,7 +297,8 @@ function Artists() {
           </h2>
           <p className="mt-5 max-w-xl text-muted-foreground sm:text-lg">
             Un tap depuis la scène. Une vague de moments signés à travers la foule. Une nouvelle
-            couche d&apos;intimité avec celles et ceux venus pour vous.
+            couche d&apos;intimité avec celles et ceux venus pour vous — et la donnée pour
+            comprendre, fidéliser et mieux remplir vos prochaines dates.
           </p>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -308,6 +311,17 @@ function Artists() {
                 <p className="mt-1.5 text-sm text-muted-foreground">{it.d}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-primary/30 bg-primary/5 p-5">
+            <p className="font-display text-[11px] uppercase tracking-[0.25em] text-primary-glow">
+              Dashboard artiste
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Une vue claire après chaque show : carte de chaleur de la fanbase, pics d&apos;engagement
+              dans le set, top moments signés, et indicateurs d&apos;impact pour ajuster setlist,
+              tournée et activations.
+            </p>
           </div>
 
           <a
@@ -332,19 +346,37 @@ function Pros() {
   const targets = [
     {
       t: "Organisateurs & festivals",
-      d: "Faites de chaque show une expérience signature. Différenciez-vous, engagez et prolongez la vie de l'événement.",
+      d: "Faites de chaque show une expérience signature. Mesurez l'engagement par scène, par créneau, par artiste — et optimisez le remplissage des prochaines éditions.",
     },
     {
       t: "Labels & managers",
-      d: "Renforcez le lien entre artiste et public. Construisez une base fans vérifiée qui vit au-delà du concert.",
+      d: "Construisez une base fans vérifiée et qualifiée. Suivez la performance par date, par ville, par artiste, et pilotez les sorties avec de la donnée live.",
     },
     {
       t: "Plateformes de billetterie",
-      d: "Ajoutez une expérience post-événement à chaque billet vendu. Nouvelle valeur, zéro friction.",
+      d: "Ajoutez une couche post-événement à chaque billet. Nouveaux insights d'audience, signaux de réachat et meilleure conversion sur les prochaines dates.",
     },
     {
       t: "Marques & partenaires",
-      d: "Sponsorisez le moment, pas juste la bannière. Authentique, opt-in, contextualisé.",
+      d: "Sponsorisez le moment, pas la bannière. Mesurez la portée réelle, l'engagement opt-in et le ROI direct de chaque activation.",
+    },
+  ];
+  const dataPoints = [
+    {
+      t: "Analyse de la communauté",
+      d: "Profil démographique, géolocalisation, fidélité, super-fans, segments activables.",
+    },
+    {
+      t: "Performance & engagement",
+      d: "Pulses déclenchées, signatures captées, durée d'attention, pics live, partages organiques.",
+    },
+    {
+      t: "Remplissage & attentes fans",
+      d: "Signaux de demande par ville et par artiste pour calibrer setlists, jauges et tournées.",
+    },
+    {
+      t: "Mesure d'impact & ROI",
+      d: "Conversion en billets, merch et streams. Attribution claire par événement et par activation.",
     },
   ];
   return (
@@ -371,6 +403,35 @@ function Pros() {
               <p className="mt-2 text-muted-foreground">{t.d}</p>
             </article>
           ))}
+        </div>
+
+        <div className="mt-16 overflow-hidden rounded-3xl border border-primary/30 bg-gradient-card p-8 sm:p-10 shadow-neon">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="font-display text-[11px] uppercase tracking-[0.25em] text-primary-glow">
+                Data &amp; ROI
+              </p>
+              <h3 className="mt-2 text-2xl font-semibold sm:text-3xl">
+                La donnée qui fait <span className="text-gradient-neon">remplir les salles</span>.
+              </h3>
+            </div>
+            <p className="max-w-md text-sm text-muted-foreground">
+              Chaque pulse, chaque signature, chaque partage devient un signal exploitable
+              pour mieux comprendre les fans et optimiser les prochains événements.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {dataPoints.map((d) => (
+              <div
+                key={d.t}
+                className="rounded-2xl border border-border/60 bg-background/40 p-5 backdrop-blur-sm"
+              >
+                <h4 className="text-sm font-semibold text-foreground">{d.t}</h4>
+                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{d.d}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
