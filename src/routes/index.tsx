@@ -11,11 +11,11 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "Star'Sign — Your moment. Their signature." },
+      { title: "Star'Sign — Le moment devient signature." },
       {
         name: "description",
         content:
-          "Star'Sign turns every concert moment into a unique, signed digital memory. Capture. Pulse. Sign. Share. Join the beta.",
+          "Star'Sign transforme chaque moment de concert en souvenir numérique unique et signé. Capture. Pulse. Sign. Share. Rejoignez la bêta.",
       },
     ],
   }),
@@ -68,14 +68,14 @@ function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:px-8">
         <div className="animate-fade-up">
-          <Eyebrow>Live music · New layer</Eyebrow>
+          <Eyebrow>Musique live · Nouvelle couche</Eyebrow>
           <h1 className="mt-5 text-balance text-5xl font-semibold leading-[0.98] sm:text-6xl md:text-7xl">
-            Your concert moment.{" "}
-            <span className="text-gradient-neon">Their signature.</span>
+            Votre moment de concert.{" "}
+            <span className="text-gradient-neon">Leur signature.</span>
           </h1>
           <p className="mt-6 max-w-xl text-pretty text-lg text-muted-foreground sm:text-xl">
-            Star&apos;Sign transforms a live moment into a unique digital memory — captured by you,
-            co-signed by the artist, certified by the event.
+            Star&apos;Sign transforme un moment live en souvenir numérique unique — capturé par
+            vous, co-signé par l&apos;artiste, certifié par l&apos;événement.
           </p>
           <p className="mt-3 font-display text-sm uppercase tracking-[0.3em] text-primary-glow">
             Le moment devient signature.
@@ -86,29 +86,29 @@ function Hero() {
               href="#beta"
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-neon px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-neon transition-transform hover:scale-105"
             >
-              Join the beta
+              Rejoindre la bêta
               <span aria-hidden>→</span>
             </a>
             <a
               href="#pros"
               className="inline-flex items-center gap-2 rounded-full border border-border/70 px-6 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
-              For artists & pros
+              Pour artistes & pros
             </a>
           </div>
 
           <div className="mt-10 flex items-center gap-6 text-xs text-muted-foreground">
             <span className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Working prototype
+              Prototype fonctionnel
             </span>
             <span className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Music Tech incubation
+              Incubation Music Tech
             </span>
             <span className="hidden sm:flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Beta opening 2026
+              Bêta ouverte en 2026
             </span>
           </div>
         </div>
@@ -130,15 +130,15 @@ function Concept() {
   return (
     <section id="concept" className="relative border-y border-border/40 py-16 sm:py-24">
       <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
-        <Eyebrow>The concept</Eyebrow>
+        <Eyebrow>Le concept</Eyebrow>
         <h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-          Not just a concert photo.
+          Pas juste une photo de concert.
           <br />
-          A <span className="text-gradient-neon">moment co-signed</span> by the artist.
+          Un <span className="text-gradient-neon">moment co-signé</span> par l&apos;artiste.
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-base text-muted-foreground sm:text-lg">
-          You capture the live. The artist triggers the pulse. Star&apos;Sign signs the moment with
-          date, place and event — a real artifact you can keep, collect and share.
+          Vous capturez le live. L&apos;artiste déclenche la pulse. Star&apos;Sign signe le moment
+          avec date, lieu et événement — un véritable artefact à garder, collectionner et partager.
         </p>
       </div>
     </section>
@@ -150,31 +150,31 @@ const steps = [
   {
     n: "01",
     title: "Capture",
-    body: "Snap a photo or video of your live moment.",
+    body: "Prenez une photo ou une vidéo de votre moment live.",
     variant: "capture" as const,
   },
   {
     n: "02",
     title: "Pulse",
-    body: "The artist triggers a shared live pulse from stage.",
+    body: "L'artiste déclenche une pulse live partagée depuis la scène.",
     variant: "pulse" as const,
   },
   {
     n: "03",
     title: "Sign",
-    body: "The artist's signature is drawn over your moment.",
+    body: "La signature de l'artiste se dessine sur votre moment.",
     variant: "sign" as const,
   },
   {
     n: "04",
     title: "Souvenir",
-    body: "A certified, dated, located memory is generated.",
+    body: "Un souvenir certifié, daté et localisé est généré.",
     variant: "souvenir" as const,
   },
   {
     n: "05",
     title: "Share",
-    body: "Keep it. Collect it. Share it. Forever yours.",
+    body: "Gardez-le. Collectionnez-le. Partagez-le. À vous pour toujours.",
     variant: "share" as const,
   },
 ];
@@ -184,13 +184,13 @@ function HowItWorks() {
     <section id="how" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="The flow"
+          eyebrow="Le parcours"
           title={
             <>
               Capture · Pulse · <span className="text-gradient-neon">Sign</span> · Share
             </>
           }
-          sub="Five steps. One signed memory. From the first beat to the last share."
+          sub="Cinq étapes. Un souvenir signé. Du premier beat au dernier partage."
         />
 
         <div className="mt-16 grid gap-10 md:grid-cols-3 lg:grid-cols-5">
@@ -202,7 +202,7 @@ function HowItWorks() {
             >
               <PhoneMockup variant={s.variant} bg={artistStage} className="mb-6" />
               <p className="font-display text-xs uppercase tracking-[0.25em] text-primary-glow">
-                Step {s.n}
+                Étape {s.n}
               </p>
               <h3 className="mt-1 text-xl font-semibold">{s.title}</h3>
               <p className="mt-2 max-w-[14rem] text-sm text-muted-foreground">{s.body}</p>
@@ -217,10 +217,10 @@ function HowItWorks() {
 /* -------------------------- FANS SECTION ----------------------- */
 function Fans() {
   const items = [
-    { t: "Real memories", d: "No more blurry phone photos. A signed moment that proves you were there." },
-    { t: "A personal gallery", d: "Every concert becomes a piece in your fan collection." },
-    { t: "Relive the emotion", d: "Open the app, feel the moment again — date, place, signature." },
-    { t: "Share something unique", d: "Drop it on socials, send it to your crew. Nobody else has yours." },
+    { t: "De vrais souvenirs", d: "Fini les photos floues. Un moment signé qui prouve que vous y étiez." },
+    { t: "Une galerie personnelle", d: "Chaque concert devient une pièce de votre collection de fan." },
+    { t: "Revivez l'émotion", d: "Ouvrez l'app, ressentez le moment à nouveau — date, lieu, signature." },
+    { t: "Partagez l'unique", d: "Postez-le, envoyez-le à votre crew. Personne d'autre n'a le vôtre." },
   ];
   return (
     <section id="fans" className="relative overflow-hidden py-24 sm:py-32">
@@ -229,7 +229,7 @@ function Fans() {
         <div className="relative">
           <img
             src={crowd}
-            alt="Festival crowd lit by purple stage lights"
+            alt="Foule de festival éclairée par des lumières de scène violettes"
             className="relative z-10 aspect-[4/5] w-full rounded-3xl object-cover shadow-neon"
             loading="lazy"
             width={1280}
@@ -242,14 +242,14 @@ function Fans() {
         </div>
 
         <div>
-          <Eyebrow>For fans</Eyebrow>
+          <Eyebrow>Pour les fans</Eyebrow>
           <h2 className="mt-4 text-balance text-4xl font-semibold leading-tight sm:text-5xl">
-            For fans who want more than{" "}
-            <span className="text-gradient-neon">blurry photos</span>.
+            Pour les fans qui veulent plus que des{" "}
+            <span className="text-gradient-neon">photos floues</span>.
           </h2>
           <p className="mt-5 max-w-xl text-muted-foreground sm:text-lg">
-            A new way to say <em className="not-italic text-foreground">&ldquo;I was there.&rdquo;</em>{" "}
-            — backed by the artist, the venue and the moment itself.
+            Une nouvelle façon de dire <em className="not-italic text-foreground">&ldquo;J&apos;y étais.&rdquo;</em>{" "}
+            — validée par l&apos;artiste, le lieu et le moment lui-même.
           </p>
 
           <ul className="mt-10 grid gap-5 sm:grid-cols-2">
@@ -268,7 +268,7 @@ function Fans() {
             href="#beta"
             className="mt-10 inline-flex items-center gap-2 rounded-full bg-gradient-neon px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow-sm transition-transform hover:scale-105"
           >
-            Become a beta tester →
+            Devenir bêta-testeur →
           </a>
         </div>
       </div>
@@ -279,23 +279,23 @@ function Fans() {
 /* -------------------------- ARTISTS SECTION -------------------- */
 function Artists() {
   const items = [
-    { t: "A live engagement tool", d: "Trigger a shared moment without breaking the show." },
-    { t: "Direct post-show contact", d: "An opt-in connection with fans, beyond social platforms." },
-    { t: "Signature, not gimmick", d: "Your signature, your style, your moment — owned by the artist." },
-    { t: "Community insights", d: "See where your audience is, when they react, what they keep." },
+    { t: "Un outil d'engagement live", d: "Déclenchez un moment partagé sans casser le show." },
+    { t: "Un lien direct post-show", d: "Une connexion opt-in avec les fans, au-delà des réseaux." },
+    { t: "Signature, pas gadget", d: "Votre signature, votre style, votre moment — possédés par l'artiste." },
+    { t: "Insights communauté", d: "Voyez où est votre public, quand il réagit, ce qu'il garde." },
   ];
   return (
     <section id="artists" className="relative border-y border-border/40 py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-2 lg:items-center lg:px-8">
         <div className="order-2 lg:order-1">
-          <Eyebrow>For artists</Eyebrow>
+          <Eyebrow>Pour les artistes</Eyebrow>
           <h2 className="mt-4 text-balance text-4xl font-semibold leading-tight sm:text-5xl">
-            Give your audience a moment{" "}
-            <span className="text-gradient-neon">they can keep</span>.
+            Offrez à votre public un moment{" "}
+            <span className="text-gradient-neon">qu&apos;il pourra garder</span>.
           </h2>
           <p className="mt-5 max-w-xl text-muted-foreground sm:text-lg">
-            One tap from the stage. A wave of signed moments across the crowd. A new layer of
-            intimacy with the people who came for you.
+            Un tap depuis la scène. Une vague de moments signés à travers la foule. Une nouvelle
+            couche d&apos;intimité avec celles et ceux venus pour vous.
           </p>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -314,7 +314,7 @@ function Artists() {
             href="#pro-contact"
             className="mt-10 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-6 py-3 text-sm font-semibold text-primary-glow transition-colors hover:bg-primary/20"
           >
-            Discover the artist experience →
+            Découvrir l&apos;expérience artiste →
           </a>
         </div>
 
@@ -331,33 +331,33 @@ function Artists() {
 function Pros() {
   const targets = [
     {
-      t: "Organizers & festivals",
-      d: "Turn every show into a signature experience. Differentiate, engage, and extend the event lifetime.",
+      t: "Organisateurs & festivals",
+      d: "Faites de chaque show une expérience signature. Différenciez-vous, engagez et prolongez la vie de l'événement.",
     },
     {
       t: "Labels & managers",
-      d: "Strengthen the bond between artist and audience. Build a verified fan layer that lives beyond the show.",
+      d: "Renforcez le lien entre artiste et public. Construisez une base fans vérifiée qui vit au-delà du concert.",
     },
     {
-      t: "Ticketing platforms",
-      d: "Add a post-event experience to every ticket sold. New value, no friction.",
+      t: "Plateformes de billetterie",
+      d: "Ajoutez une expérience post-événement à chaque billet vendu. Nouvelle valeur, zéro friction.",
     },
     {
-      t: "Brands & partners",
-      d: "Sponsor the moment, not just the banner. Authentic, opt-in, contextualized.",
+      t: "Marques & partenaires",
+      d: "Sponsorisez le moment, pas juste la bannière. Authentique, opt-in, contextualisé.",
     },
   ];
   return (
     <section id="pros" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="For the music ecosystem"
+          eyebrow="Pour l'écosystème musical"
           title={
             <>
-              A new layer of value for <span className="text-gradient-neon">live music</span>.
+              Une nouvelle couche de valeur pour la <span className="text-gradient-neon">musique live</span>.
             </>
           }
-          sub="Star'Sign sits between fans, artists and the live event — a structured layer for engagement, memory and audience intelligence."
+          sub="Star'Sign se situe entre les fans, les artistes et l'événement live — une couche structurée pour l'engagement, le souvenir et la connaissance du public."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2">
@@ -380,21 +380,21 @@ function Pros() {
 /* --------------------- WHY DIFFERENT (compare) ----------------- */
 function WhyDifferent() {
   const rows = [
-    { what: "Selfie", missing: "Personal but unsigned" },
-    { what: "Story", missing: "Shareable but temporary" },
-    { what: "Autograph", missing: "Emotional but not scalable" },
-    { what: "Ticket", missing: "Transactional, not experiential" },
-    { what: "Social post", missing: "Visible but not contextualized" },
+    { what: "Selfie", missing: "Personnel mais non signé" },
+    { what: "Story", missing: "Partageable mais éphémère" },
+    { what: "Autographe", missing: "Émotionnel mais pas scalable" },
+    { what: "Billet", missing: "Transactionnel, pas expérientiel" },
+    { what: "Post social", missing: "Visible mais non contextualisé" },
   ];
   return (
     <section className="relative border-y border-border/40 bg-secondary/40 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="Why Star'Sign"
+          eyebrow="Pourquoi Star'Sign"
           title={
             <>
-              Everything else captures the show.{" "}
-              <span className="text-gradient-neon">Star&apos;Sign signs the moment.</span>
+              Tout le reste capture le show.{" "}
+              <span className="text-gradient-neon">Star&apos;Sign signe le moment.</span>
             </>
           }
         />
@@ -414,15 +414,15 @@ function WhyDifferent() {
 
           <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-gradient-card p-8 shadow-neon">
             <SignatureMark className="h-16 w-32 text-primary-glow" />
-            <h3 className="mt-4 text-2xl font-semibold sm:text-3xl">Star&apos;Sign combines all of it.</h3>
+            <h3 className="mt-4 text-2xl font-semibold sm:text-3xl">Star&apos;Sign réunit tout cela.</h3>
             <ul className="mt-6 grid gap-3 text-sm sm:grid-cols-2">
               {[
-                "Artist trigger",
-                "Fan capture",
-                "Event context",
-                "Proof of presence",
-                "Signed memory",
-                "Shareable artifact",
+                "Déclenchement artiste",
+                "Capture fan",
+                "Contexte événement",
+                "Preuve de présence",
+                "Souvenir signé",
+                "Artefact partageable",
               ].map((b) => (
                 <li key={b} className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary" />
@@ -440,18 +440,18 @@ function WhyDifferent() {
 /* ------------------------ MOMENTUM / PROOF --------------------- */
 function Momentum() {
   const items = [
-    { k: "Working", v: "Functional web prototype tested live" },
-    { k: "Validated", v: "Spontaneous interest from real concert audiences" },
-    { k: "Incubated", v: "Music Tech incubation context" },
-    { k: "Backed", v: "Carried by La Marmite Digitale" },
+    { k: "Fonctionnel", v: "Prototype web testé en conditions live" },
+    { k: "Validé", v: "Intérêt spontané de vrais publics de concert" },
+    { k: "Incubé", v: "Cadre d'incubation Music Tech" },
+    { k: "Soutenu", v: "Porté par La Marmite Digitale" },
   ];
   return (
     <section className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="Already in motion"
-          title={<>Already tested. <span className="text-gradient-neon">Already understood.</span></>}
-          sub="Built from real frustration on real concert nights — not a pitch deck."
+          eyebrow="Déjà en mouvement"
+          title={<>Déjà testé. <span className="text-gradient-neon">Déjà compris.</span></>}
+          sub="Né d'une vraie frustration lors de vraies soirées concert — pas d'un pitch deck."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -483,13 +483,13 @@ function BetaForm() {
       <div className="absolute inset-0 bg-gradient-stage" />
 
       <div className="relative mx-auto max-w-3xl px-5 text-center lg:px-8">
-        <Eyebrow>Beta — limited spots</Eyebrow>
+        <Eyebrow>Bêta — places limitées</Eyebrow>
         <h2 className="mt-5 text-balance text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
-          Become a <span className="text-gradient-neon">Star&apos;Sign</span> beta tester.
+          Devenez bêta-testeur <span className="text-gradient-neon">Star&apos;Sign</span>.
         </h2>
         <p className="mt-5 text-muted-foreground sm:text-lg">
-          Be among the first to live signed concert moments. Early access, exclusive drops,
-          shape the app with us.
+          Soyez parmi les premiers à vivre des moments de concert signés. Accès anticipé,
+          drops exclusifs, façonnez l&apos;app avec nous.
         </p>
 
         <form
@@ -497,13 +497,13 @@ function BetaForm() {
           onSubmit={(e) => {
             e.preventDefault();
             const f = e.currentTarget;
-            f.querySelector<HTMLButtonElement>("button[type=submit]")!.innerText = "You're in ✦";
+            f.querySelector<HTMLButtonElement>("button[type=submit]")!.innerText = "C'est validé ✦";
           }}
         >
           <div className="grid gap-3 sm:grid-cols-2">
             <input
               required
-              placeholder="First name"
+              placeholder="Prénom"
               className="rounded-xl border border-border bg-card/80 px-4 py-3 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none"
             />
             <input
@@ -515,32 +515,32 @@ function BetaForm() {
           </div>
           <div className="grid gap-3 sm:grid-cols-3">
             <input
-              placeholder="Favorite music style"
+              placeholder="Style musical favori"
               className="rounded-xl border border-border bg-card/80 px-4 py-3 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none sm:col-span-1"
             />
             <input
-              placeholder="City"
+              placeholder="Ville"
               className="rounded-xl border border-border bg-card/80 px-4 py-3 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none"
             />
             <select
               defaultValue=""
               className="rounded-xl border border-border bg-card/80 px-4 py-3 text-sm text-muted-foreground focus:border-primary focus:outline-none"
             >
-              <option value="" disabled>Concert frequency</option>
-              <option>1–2 / year</option>
-              <option>3–5 / year</option>
-              <option>6–10 / year</option>
-              <option>10+ / year</option>
+              <option value="" disabled>Fréquence concerts</option>
+              <option>1–2 / an</option>
+              <option>3–5 / an</option>
+              <option>6–10 / an</option>
+              <option>10+ / an</option>
             </select>
           </div>
           <button
             type="submit"
             className="mt-2 rounded-full bg-gradient-neon px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-neon transition-transform hover:scale-[1.02]"
           >
-            Get my beta access →
+            Obtenir mon accès bêta →
           </button>
           <p className="mt-2 text-center text-xs text-muted-foreground">
-            No spam. Just signed moments and beta drops.
+            Pas de spam. Juste des moments signés et des drops bêta.
           </p>
         </form>
       </div>
@@ -554,39 +554,39 @@ function ProContact() {
     <section id="pro-contact" className="relative border-y border-border/40 py-20 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[1.2fr_1fr] lg:items-center lg:px-8">
         <div>
-          <Eyebrow>Artists · Labels · Venues · Festivals · Brands</Eyebrow>
+          <Eyebrow>Artistes · Labels · Salles · Festivals · Marques</Eyebrow>
           <h2 className="mt-4 text-balance text-4xl font-semibold leading-tight sm:text-5xl">
-            Let&apos;s imagine your{" "}
-            <span className="text-gradient-neon">first signed live moment</span>.
+            Imaginons votre{" "}
+            <span className="text-gradient-neon">premier moment live signé</span>.
           </h2>
           <p className="mt-5 max-w-xl text-muted-foreground sm:text-lg">
-            Pilot a Star&apos;Sign experience on your next show. We co-build the integration with
-            your team — minimal logistics, maximum impact.
+            Pilotez une expérience Star&apos;Sign sur votre prochain show. On co-construit
+            l&apos;intégration avec vos équipes — logistique minimale, impact maximal.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="mailto:hello@star-sign.co"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-neon px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow-sm hover:scale-105 transition-transform"
             >
-              Contact the team
+              Contacter l&apos;équipe
             </a>
             <a
-              href="mailto:hello@star-sign.co?subject=Demo%20request"
+              href="mailto:hello@star-sign.co?subject=Demande%20de%20demo"
               className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium hover:bg-secondary transition-colors"
             >
-              Request a demo
+              Demander une démo
             </a>
             <a
-              href="mailto:hello@star-sign.co?subject=Partnership"
+              href="mailto:hello@star-sign.co?subject=Partenariat"
               className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium hover:bg-secondary transition-colors"
             >
-              Explore partnership
+              Explorer un partenariat
             </a>
           </div>
         </div>
 
         <div className="grid grid-cols-3 gap-3 opacity-80">
-          {["VENUES", "LABELS", "FESTIVALS", "TICKETING", "BRANDS", "PRESS"].map((p) => (
+          {["SALLES", "LABELS", "FESTIVALS", "BILLETTERIE", "MARQUES", "PRESSE"].map((p) => (
             <div
               key={p}
               className="flex aspect-square items-center justify-center rounded-2xl border border-dashed border-border/70 bg-card/40 text-[10px] uppercase tracking-[0.2em] text-muted-foreground"
@@ -604,19 +604,19 @@ function ProContact() {
 function FAQ() {
   const qa = [
     {
-      q: "What is Star'Sign exactly?",
-      a: "A mobile app that turns a live concert moment into a unique digital memory, co-signed by the artist, with date, place and event context.",
+      q: "C'est quoi Star'Sign, exactement ?",
+      a: "Une app mobile qui transforme un moment de concert en souvenir numérique unique, co-signé par l'artiste, avec date, lieu et contexte événement.",
     },
-    { q: "Is the app available now?", a: "We're opening a closed beta in 2026. Join the waitlist to get early access." },
+    { q: "L'app est-elle disponible maintenant ?", a: "Nous ouvrons une bêta fermée en 2026. Inscrivez-vous sur la liste d'attente pour un accès anticipé." },
     {
-      q: "How does the signature work?",
-      a: "During the show, the artist triggers a live pulse from their Star'Sign space. Fans capturing the moment receive an authentic, certified signature on their memory.",
+      q: "Comment fonctionne la signature ?",
+      a: "Pendant le show, l'artiste déclenche une pulse live depuis son espace Star'Sign. Les fans qui capturent le moment reçoivent une signature authentique et certifiée sur leur souvenir.",
     },
-    { q: "Is it only for big artists?", a: "No. Star'Sign works for emerging artists, headliners, festivals, club nights — any live music context." },
-    { q: "Can venues and festivals use it?", a: "Yes. Organizers can activate Star'Sign for their event and offer it as a built-in experience." },
-    { q: "What about image rights and consent?", a: "Everything is opt-in. Artists control their signature. Fans control their captures and shares." },
-    { q: "How do I become a beta tester?", a: "Fill the beta form above. We'll reach out when your spot opens." },
-    { q: "How can professionals contact the team?", a: "Email hello@star-sign.co or use the pro contact buttons above. We answer fast." },
+    { q: "C'est seulement pour les gros artistes ?", a: "Non. Star'Sign fonctionne pour les artistes émergents, les têtes d'affiche, les festivals, les soirées club — tout contexte de musique live." },
+    { q: "Les salles et festivals peuvent-ils l'utiliser ?", a: "Oui. Les organisateurs peuvent activer Star'Sign pour leur événement et le proposer comme expérience intégrée." },
+    { q: "Et les droits à l'image et le consentement ?", a: "Tout est opt-in. Les artistes contrôlent leur signature. Les fans contrôlent leurs captures et partages." },
+    { q: "Comment devenir bêta-testeur ?", a: "Remplissez le formulaire bêta ci-dessus. On vous recontacte dès qu'une place s'ouvre." },
+    { q: "Comment les pros contactent l'équipe ?", a: "Écrivez à hello@star-sign.co ou utilisez les boutons de contact pro ci-dessus. On répond vite." },
   ];
   return (
     <section id="faq" className="relative py-24 sm:py-32">
@@ -624,7 +624,7 @@ function FAQ() {
         <SectionHeading
           center
           eyebrow="FAQ"
-          title={<>Questions, <span className="text-gradient-neon">cleared</span>.</>}
+          title={<>Questions, <span className="text-gradient-neon">réponses</span>.</>}
         />
         <div className="mt-12 divide-y divide-border/60 rounded-3xl border border-border/60 bg-gradient-card">
           {qa.map((item) => (
@@ -660,40 +660,40 @@ function Footer() {
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
             Le moment devient signature.
             <br />
-            Your moment. Their signature.
+            Votre moment. Leur signature.
           </p>
           <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" /> In development
+            <span className="h-1.5 w-1.5 rounded-full bg-primary" /> En développement
           </p>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold">Product</h4>
+          <h4 className="text-sm font-semibold">Produit</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li><a href="#concept" className="hover:text-foreground">Concept</a></li>
-            <li><a href="#how" className="hover:text-foreground">How it works</a></li>
-            <li><a href="#beta" className="hover:text-foreground">Join the beta</a></li>
+            <li><a href="#how" className="hover:text-foreground">Comment ça marche</a></li>
+            <li><a href="#beta" className="hover:text-foreground">Rejoindre la bêta</a></li>
           </ul>
         </div>
         <div>
-          <h4 className="text-sm font-semibold">For pros</h4>
+          <h4 className="text-sm font-semibold">Pour les pros</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li><a href="#artists" className="hover:text-foreground">Artists</a></li>
-            <li><a href="#pros" className="hover:text-foreground">Organizers & labels</a></li>
-            <li><a href="#pro-contact" className="hover:text-foreground">Request a demo</a></li>
+            <li><a href="#artists" className="hover:text-foreground">Artistes</a></li>
+            <li><a href="#pros" className="hover:text-foreground">Organisateurs & labels</a></li>
+            <li><a href="#pro-contact" className="hover:text-foreground">Demander une démo</a></li>
           </ul>
         </div>
         <div>
           <h4 className="text-sm font-semibold">Contact</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li><a href="mailto:hello@star-sign.co" className="hover:text-foreground">hello@star-sign.co</a></li>
-            <li><a href="mailto:press@star-sign.co" className="hover:text-foreground">Press</a></li>
+            <li><a href="mailto:press@star-sign.co" className="hover:text-foreground">Presse</a></li>
             <li><a href="#" className="hover:text-foreground">Instagram · TikTok</a></li>
           </ul>
         </div>
       </div>
       <div className="border-t border-border/60 px-5 py-6 text-center text-xs text-muted-foreground lg:px-8">
-        © {new Date().getFullYear()} Star&apos;Sign — All rights reserved · Privacy · Legal
+        © {new Date().getFullYear()} Star&apos;Sign — Tous droits réservés · Confidentialité · Mentions légales
       </div>
     </footer>
   );

@@ -3,11 +3,11 @@ import { SignatureMark } from "./SignatureMark";
 type Variant = "capture" | "pulse" | "sign" | "souvenir" | "share";
 
 const labels: Record<Variant, { eyebrow: string; title: string }> = {
-  capture: { eyebrow: "01 — Capture", title: "Live moment" },
-  pulse: { eyebrow: "02 — Pulse", title: "The artist triggers" },
-  sign: { eyebrow: "03 — Sign", title: "Signature in motion" },
-  souvenir: { eyebrow: "04 — Souvenir", title: "Certified memory" },
-  share: { eyebrow: "05 — Share", title: "Yours forever" },
+  capture: { eyebrow: "01 — Capture", title: "Moment live" },
+  pulse: { eyebrow: "02 — Pulse", title: "L'artiste déclenche" },
+  sign: { eyebrow: "03 — Sign", title: "Signature en direct" },
+  souvenir: { eyebrow: "04 — Souvenir", title: "Souvenir certifié" },
+  share: { eyebrow: "05 — Share", title: "À vous, pour toujours" },
 };
 
 export function PhoneMockup({
@@ -87,7 +87,7 @@ export function PhoneMockup({
                 <p className="text-[9px] text-white/60">{venue}</p>
               </div>
               <span className="rounded-full bg-primary/20 px-2 py-0.5 text-[8px] uppercase tracking-wider text-primary-glow">
-                Certified
+                Certifié
               </span>
             </div>
             <p className="mt-1 text-[9px] text-white/50">{date}</p>

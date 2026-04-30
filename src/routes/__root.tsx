@@ -29,15 +29,15 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Star'Sign — Your moment. Their signature." },
-      { name: "description", content: "Star'Sign turns every concert moment into a unique digital memory, co-signed by the artist. Capture. Pulse. Sign. Share." },
+      { title: "Star'Sign — Le moment devient signature." },
+      { name: "description", content: "Star'Sign transforme chaque moment de concert en souvenir numérique unique, co-signé par l'artiste. Capture. Pulse. Sign. Share." },
       { name: "author", content: "Star'Sign" },
-      { property: "og:title", content: "Star'Sign — Your moment. Their signature." },
-      { property: "og:description", content: "The mobile app that transforms live concert moments into signed, certified, shareable memories." },
+      { property: "og:title", content: "Star'Sign — Le moment devient signature." },
+      { property: "og:description", content: "L'app mobile qui transforme vos moments live en souvenirs signés, certifiés et partageables." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Star'Sign — Your moment. Their signature." },
-      { name: "twitter:description", content: "Capture. Pulse. Sign. Share. The new layer of live music." },
+      { name: "twitter:title", content: "Star'Sign — Le moment devient signature." },
+      { name: "twitter:description", content: "Capture. Pulse. Sign. Share. La nouvelle couche du live." },
     ],
     links: [
       {
@@ -59,7 +59,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <HeadContent />
       </head>
